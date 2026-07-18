@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>EHS 情景英语训练营 · 安全五点半</title>
+<meta name="description" content="安全五点半·EHS英语角：EHS职场英语=日常对话+情景表达。不是网课是带练的英语健身房。Frank老师（龚国瑞）28年EHS经验亲授，小班实战。">
+<meta property="og:title" content="EHS 情景英语训练营 · 安全五点半">
+<meta property="og:description" content="EHS职场英语 = 日常英语对话 + EHS情景表达。带练式小班实战，Frank老师28年EHS经验亲授。">
+<meta property="og:image" content="https://wangdn2026.github.io/ehs-course/og_course.png">
+<meta property="og:type" content="website">
+<meta name="twitter:card" content="summary_large_image">
+<style>
+:root{
+  --paper:#faf7f1;
+  --ink:#2b2b2b;
+  --muted:#857c70;
+  --blue:#0066cc;
+  --orange:#ff7700;
+  --line:#ece4d6;
+  --card:#ffffff;
+  --soft:#f3ede2;
+  --teal:#0e9f9a;
+  --gold:#b8860b;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{-webkit-text-size-adjust:100%}
+body{
+  font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Microsoft YaHei",sans-serif;
+  background:var(--paper);color:var(--ink);line-height:1.65;
+  -webkit-font-smoothing:antialiased;padding:0 16px 60px;
+}
+.wrap{max-width:640px;margin:0 auto}
+section{padding:30px 0;border-top:1px solid var(--line)}
+section:first-of-type{border-top:none}
+.anchor{padding-top:70px;margin-top:-50px}
+
+/* 品牌 */
+.brand{text-align:center;padding:38px 0 14px}
+.brand .logo-img{height:64px;width:auto;border-radius:10px;margin-bottom:8px}
+.brand .logo-text{font-size:13px;letter-spacing:2px;color:var(--orange);font-weight:700}
+.brand h1{font-size:27px;margin-top:12px;font-weight:800;letter-spacing:1px}
+.brand p{font-size:14.5px;color:var(--muted);margin-top:10px;line-height:1.7}
+
+/* 区块标题 */
+.sec-h{font-size:19px;font-weight:800;margin-bottom:4px}
+.sec-sub{font-size:13px;color:var(--muted);margin-bottom:18px}
+.wtag{display:inline-block;font-size:11px;font-weight:800;color:#fff;background:var(--blue);border-radius:6px;padding:2px 9px;margin-left:8px;vertical-align:middle;letter-spacing:1px}
+
+/* 核心理念卡片 */
+.concept{
+  background:linear-gradient(135deg,#1a2a4a,#2d4a6e);
+  color:#fff;
+  border-radius:16px;
+  padding:24px 20px;
+  margin:0;
+  text-align:center;
+}
+.concept .formula{font-size:22px;font-weight:900;letter-spacing:1px;margin:12px 0}
+.concept .formula span{color:var(--orange)}
+.concept .principles{display:flex;flex-wrap:wrap;gap:8px;justify-content:center;margin-top:14px}
+.concept .p-tag{background:rgba(255,119,0,.18);border:1.5px solid rgba(255,119,0,.45);color:#ffd699;border-radius:20px;padding:5px 15px;font-size:13px;font-weight:700}
+.conclusion{margin-top:14px;font-size:15px;line-height:1.75;color:#d4e4f7}
+
+/* 环节 */
+.steps{display:flex;flex-direction:column;gap:12px}
+.step{display:flex;gap:13px;align-items:flex-start;background:var(--card);border:1px solid var(--line);border-radius:13px;padding:14px 15px}
+.step .no{flex:none;width:30px;height:30px;border-radius:50%;background:var(--blue);color:#fff;font-weight:800;font-size:14px;display:flex;align-items:center;justify-content:center}
+.step h3{font-size:15.5px;font-weight:800}
+.step p{font-size:13px;color:var(--muted);margin-top:3px;line-height:1.6}
+
+/* 讲师 */
+.teacher-card{
+  background:var(--card);
+  border:2px solid var(--gold);
+  border-radius:16px;
+  padding:22px 18px;
+  margin-bottom:18px;
+}
+.teacher-card .t-name{font-size:21px;font-weight:900;text-align:center;margin-bottom:2px}
+.teacher-card .t-avatar{display:block;width:140px;height:140px;border-radius:50%;object-fit:cover;border:3px solid var(--gold);margin:0 auto 12px;box-shadow:0 4px 16px rgba(184,134,11,.25)}
+.teacher-card .t-en{text-align:center;font-size:13px;color:var(--muted);margin-bottom:14px}
+.teacher-badges{display:flex;flex-wrap:wrap;gap:8px;justify-content:center;margin-bottom:14px}
+.t-badge{background:var(--soft);border:1.5px solid var(--gold);color:var(--ink);border-radius:10px;padding:5px 12px;font-size:12.5px;font-weight:700}
+.teacher-features{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.t-feature{background:var(--soft);border-radius:11px;padding:11px 13px;text-align:center}
+.t-feature h4{font-size:13.5px;font-weight:800;color:var(--blue)}
+.t-feature p{font-size:12px;color:var(--muted);margin-top:3px;line-height:1.55}
+.t-footer{margin-top:14px;background:linear-gradient(135deg,var(--gold),#daa520);color:#fff;border-radius:11px;padding:12px 15px;text-align:center;font-size:14px;font-weight:700;line-height:1.65}
+
+/* 学员画像 */
+.personas{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:18px}
+.persona{font-size:12.5px;background:var(--soft);color:var(--ink);padding:6px 12px;border-radius:20px;font-weight:600}
+.persona-check{font-size:12.5px;background:rgba(14,159,154,.1);color:var(--teal);border:1.5px solid rgba(14,159,154,.35);padding:6px 12px;border-radius:20px;font-weight:600;display:flex;align-items:center;gap:4px}
+.persona-check .chk{color:var(--teal);font-weight:900}
+.quotes{display:flex;flex-direction:column;gap:12px}
+.quote{background:var(--card);border:1px solid var(--line);border-left:4px solid var(--orange);border-radius:10px;padding:13px 15px}
+.quote p{font-size:13.5px;line-height:1.7}
+.quote .who{display:block;margin-top:7px;font-size:12px;color:var(--muted)}
+
+/* 信息块 */
+.info{background:var(--card);border:1px solid var(--line);border-radius:13px;padding:16px 17px;font-size:14px;line-height:1.8}
+.info b{color:var(--orange)}
+
+/* 健身房特色 */
+.gym-grid{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:14px}
+.gym-item{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:13px 14px}
+.gym-item .gi-no{display:inline-flex;align-items:center;justify-content:center;width:26px;height:26px;border-radius:50%;background:var(--orange);color:#fff;font-weight:800;font-size:13px;margin-right:8px;float:left}
+.gym-item h4{font-size:14px;font-weight:800;margin-bottom:4px}
+.gym-item p{font-size:12.5px;color:var(--muted);line-height:1.55;clear:both}
+.gym-vip{grid-column:1/-1;background:linear-gradient(135deg,var(--gold),#daa520);color:#fff;border:none}
+.gym-vip h4,.gym-vip p{color:#fff}
+.gym-vip p{opacity:.92}
+
+/* Why */
+.why{display:flex;flex-direction:column;gap:11px}
+.why .item{display:flex;gap:11px;align-items:flex-start;background:var(--card);border:1px solid var(--line);border-radius:13px;padding:13px 15px}
+.why .dot{flex:none;width:24px;height:24px;border-radius:50%;background:var(--orange);color:#fff;font-weight:800;font-size:13px;display:flex;align-items:center;justify-content:center;margin-top:1px}
+.why .item h3{font-size:14.5px;font-weight:800}
+.why .item p{font-size:13px;color:var(--muted);margin-top:2px;line-height:1.6}
+
+/* 六大课包 */
+.packages{display:grid;grid-template-columns:1fr 1fr 1fr;gap:10px}
+.pkg{background:var(--card);border:1px solid var(--line);border-radius:13px;padding:16px 12px;text-align:center}
+.pkg-code{font-size:12px;font-weight:800;color:#fff;border-radius:7px;padding:3px 10px;display:inline-block;margin-bottom:8px}
+.pkg--a .pkg-code{background:#f0c040}
+.pkg--b .pkg-code{background:#60b0c0}
+.pkg--c .pkg-code{background:#80c080}
+.pkg--d .pkg-code{background:#e09050}
+.pkg--e .pkg-code{background:#a080c8}
+.pkg--f .pkg-code{background:#e07090}
+.pkg-title{font-size:14px;font-weight:800;margin-bottom:3px}
+.pkg-desc{font-size:12px;color:var(--muted);line-height:1.5}
+.pkg-note{margin-top:14px;text-align:center;font-size:12.5px;color:var(--muted);font-style:italic}
+
+/* 课程陈列 */
+.grid{display:grid;grid-template-columns:1fr;gap:12px}
+.course{background:var(--card);border:1px solid var(--line);border-radius:13px;padding:14px 15px;display:flex;flex-direction:column;gap:8px}
+.course .top{display:flex;align-items:center;gap:9px}
+.course .code{flex:none;font-size:12px;font-weight:800;color:#fff;background:var(--blue);border-radius:7px;padding:3px 9px}
+.course .life{font-size:15.5px;font-weight:800}
+.course .ehs{font-size:12.5px;color:var(--muted);line-height:1.55}
+.course .ehs b{color:var(--orange);font-weight:700}
+.trial{pointer-events:none;align-self:flex-start;margin-top:2px;font-size:12px;font-weight:700;color:#b3a999;background:var(--soft);border-radius:20px;padding:4px 13px}
+
+/* 页脚 */
+.foot{text-align:center;margin-top:34px;font-size:12px;color:var(--muted);line-height:1.9}
+.foot .strong{color:var(--orange);font-weight:700}
+</style>
+<style>
+.home-fab{position:fixed;left:14px;bottom:16px;z-index:9999;display:inline-flex;align-items:center;gap:5px;padding:9px 15px;border-radius:22px;background:rgba(0,102,204,.94);color:#fff;font-size:13.5px;font-weight:700;text-decoration:none;box-shadow:0 3px 12px rgba(0,0,0,.22);font-family:inherit;letter-spacing:.5px}.home-fab:active{transform:translateY(1px)}
+</style>
+</head>
+<body>
+<a class="home-fab" href="https://wangdn2026.github.io/ehs-shelf/">&#8592; 返回书架</a>
+
+<div class="wrap">
+
+  <!-- 品牌 -->
+  <div class="brand">
+    <div class="logo-text">安全五点半 · EHS英语角</div>
+    <h1>EHS 情景英语训练营</h1>
+    <p>把安全管理工作里的真实场景，<br>变成你能开口说的英语。</p>
+  </div>
+
+  <!-- 何事 What — 核心定位 -->
+  <section id="what" class="anchor">
+    <div class="sec-h">什么是真正的 EHS 职场英语<span class="wtag">WHAT</span></div>
+    <div class="sec-sub">我们的核心理念</div>
+    <div class="concept">
+      <div style="font-size:15px;opacity:.85">EHS 职场英语 =</div>
+      <div class="formula"><span>日常英语对话</span> + <span>EHS 情景表达</span></div>
+      <div class="principles">
+        <span class="p-tag">&#10003; 我们不追求地道口音</span>
+        <span class="p-tag">&#10003; 不纠结语法完美主义</span>
+      </div>
+      <div class="conclusion">语言就是语言，交流沟通无障碍就行。</div>
+    </div>
+  </section>
+
+  <!-- 课程怎么上 — 带练健身房 -->
+  <section>
+    <div class="sec-h">这不是网课，是带练的英语健身房</div>
+    <div class="sec-sub">听说训练 · 小班实战</div>
+    <div class="gym-grid">
+      <div class="gym-item"><span class="gi-no">1</span><h4>班级规模</h4><p>每班小于等于 10 人</p></div>
+      <div class="gym-item"><span class="gi-no">2</span><h4>平台</h4><p>腾讯会议<br>线上参与无地域限制</p></div>
+      <div class="gym-item"><span class="gi-no">3</span><h4>频率</h4><p>每周一次口语交流<br>每次 2 小时，共 12 次</p></div>
+      <div class="gym-item"><span class="gi-no">4</span><h4>内容设计</h4><p>日常口语热身<br>+ EHS 职场情景模拟</p></div>
+      <div class="gym-item"><span class="gi-no">5</span><h4>打卡巩固</h4><p>周中巩固<br>学员口语打卡练习</p></div>
+      <div class="gym-item gym-vip"><span class="gi-no">VIP</span><h4>VIP 辅导</h4><p>每周 15 分钟一对一线上交流</p></div>
+    </div>
+  </section>
+
+  <!-- 何人 Who — 讲师 + 学员画像 -->
+  <section id="who" class="anchor">
+    <div class="sec-h">谁来讲、谁该学、学完能干嘛<span class="wtag">WHO</span></div>
+    <div class="sec-sub">讲师介绍 &amp; 面向人群</div>
+
+    <!-- Frank 老师 -->
+    <div class="teacher-card">
+      <img class="t-avatar" src="assets/frank.jpg" alt="Frank老师 龚国瑞">
+      <div class="t-name">认识 Frank 老师</div>
+      <div class="t-en">龚国瑞 Frank Gong</div>
+      <div class="teacher-badges">
+        <span class="t-badge">有机化学硕士</span>
+        <span class="t-badge">28 年 EHS 经验</span>
+        <span class="t-badge">22 年亚太区总监</span>
+      </div>
+      <div class="teacher-features">
+        <div class="t-feature"><h4>38 年英语辅导</h4><p>业余辅导 +<br>机构兼职教师</p></div>
+        <div class="t-feature"><h4>EHS 英语一角创始人</h4><p>国内首个 EHS<br>英语学习社群</p></div>
+        <div class="t-feature"><h4>帮 EHS 人敢开口</h4><p>学 EHS 专业英语<br>沟通无国界</p></div>
+        <div class="t-feature"><h4>关注 FrankEHS英语</h4><p>日常交际 + EHS 职场<br>一次搞定</p></div>
+      </div>
+      <div class="t-footer">让英语成为你的职场竞争力！</div>
+    </div>
+
+    <!-- 为谁准备 -->
+    <div class="info" style="margin-bottom:14px">
+      <b>为谁准备：</b>
+    </div>
+    <div class="personas" style="margin-bottom:18px">
+      <span class="persona-check"><span class="chk">&#10003;</span> EHS 工程师 / 主管，准备跳槽外企或参与国际项目</span>
+      <span class="persona-check"><span class="chk">&#10003;</span> 已有一定英语基础（四级或以上），但缺乏职场实战训练</span>
+      <span class="persona-check"><span class="chk">&#10003;</span> 需要与海外团队、国际审核员、跨国客户频繁沟通</span>
+      <span class="persona-check"><span class="chk">&#10003;</span> 想系统化掌握 EHS 专业英语表达的哑巴英语持有者</span>
+    </div>
+    <div class="info" style="margin-bottom:16px">
+      <b>学完能干嘛：</b>能独立写英文会议纪要、能和外资总部或海外当地方顺畅沟通、能动手做 EHS 英文报告与跨文化安全培训。
+    </div>
+    <div class="quotes">
+      <div class="quote"><p>"以前总部审计的英文纪要总怕写错，现在敢自己动手了。"</p><span class="who">—— 某外企 EHS 工程师</span></div>
+      <div class="quote"><p>"出海项目上和当地承包商沟通顺多了，不再总靠翻译救场。"</p><span class="who">—— 某出海项目安全员</span></div>
+      <div class="quote"><p>"一套课把生活英语和专业场景串起来，学得不零散。"</p><span class="who">—— 某央企国际业务骨干</span></div>
+    </div>
+  </section>
+
+  <!-- 何时 When -->
+  <section id="when" class="anchor">
+    <div class="sec-h">什么时间上课<span class="wtag">WHEN</span></div>
+    <div class="sec-sub">每周两次线上活动</div>
+    <div class="info">
+      训练营<strong>滚动开班</strong>。<br><br>
+      <b>&#128197; 周一 19:45 — 场景带练课</b><br>
+      每次约 <strong>2 小时</strong>：两个 EHS 工作场景带练 + 分组对话实战。<br><br>
+      <b>&#128197; 周三 21:15 — 同学会</b><br>
+      每次约 <strong>1 小时</strong>：学员自由交流、口语练习、答疑互助。<br><br>
+      错过直播可看回放；预习点读卡与跟读材料<strong>随时可学</strong>，通勤、出差的碎片时间都能用。
+    </div>
+  </section>
+
+  <!-- 何地 Where -->
+  <section id="where" class="anchor">
+    <div class="sec-h">在哪儿上课<span class="wtag">WHERE</span></div>
+    <div class="sec-sub">全程线上，打开浏览器就能学</div>
+    <div class="info">
+      训练营<strong>全程线上</strong>进行。<br><br>
+      直播带读通过<strong>腾讯会议</strong>面对面纠音；<br>
+      点读卡与跟读材料在<strong>手机或电脑浏览器打开即用</strong>，无需安装任何软件，不受地域限制。<br><br>
+      每班<strong>不超过 10 人</strong>，保证每位学员都有充分的开口练习机会。
+    </div>
+  </section>
+
+  <!-- 为何 Why -->
+  <section id="why" class="anchor">
+    <div class="sec-h">为什么选这里<span class="wtag">WHY</span></div>
+    <div class="sec-sub">现在就为未来准备弹药</div>
+    <div class="why">
+      <div class="item"><div class="dot">1</div><div><h3>双线穿插设计</h3><p>每门课 = 一个生活场景 + 一个 EHS 专业模块，日常英语和专业表达一起练，不零散。</p></div></div>
+      <div class="item"><div class="dot">2</div><div><h3>不追求地道口音</h3><p>语言就是语言，交流沟通无障碍就行。我们不纠结发音和语法完美主义，只求你能开口、能被听懂。</p></div></div>
+      <div class="item"><div class="dot">3</div><div><h3>28 年 EHS 实战经验讲师</h3><p>Frank 老师从一线干到亚太区总监，懂你工作中真正会遇到哪些英文场景。</p></div></div>
+      <div class="item"><div class="dot">4</div><div><h3>小班带练，不是看视频</h3><p>&le;10 人小班，每周直播带读 + 口语打卡 + VIP 一对一，逼着你开口说。</p></div></div>
+    </div>
+  </section>
+
+  <!-- 六大专项课包 -->
+  <section id="packages" class="anchor">
+    <div class="sec-h">六大专项课包</div>
+    <div class="sec-sub">覆盖 EHS 全工作场景</div>
+    <div class="packages">
+      <div class="pkg pkg--a">
+        <span class="pkg-code">课包 A</span>
+        <div class="pkg-title">EHS 管理体系</div>
+        <div class="pkg-desc">职业健康安全管理体系、方针职责、领导力承诺</div>
+      </div>
+      <div class="pkg pkg--b">
+        <span class="pkg-code">课包 B</span>
+        <div class="pkg-title">EHS 法律法规</div>
+        <div class="pkg-desc">法规合规要求与法律条文解读</div>
+      </div>
+      <div class="pkg pkg--c">
+        <span class="pkg-code">课包 C</span>
+        <div class="pkg-title">一般健康安全</div>
+        <div class="pkg-desc">通用健康安全管理实务</div>
+      </div>
+      <div class="pkg pkg--d">
+        <span class="pkg-code">课包 D</span>
+        <div class="pkg-title">承包商安全管理<br>和高风险作业（一）</div>
+        <div class="pkg-desc">供应商评估、作业许可、动火作业等</div>
+      </div>
+      <div class="pkg pkg--e">
+        <span class="pkg-code">课包 E</span>
+        <div class="pkg-title">高风险作业（二）</div>
+        <div class="pkg-desc">受限空间、高处作业等特殊风险管控</div>
+      </div>
+      <div class="pkg pkg--f">
+        <span class="pkg-code">课包 F</span>
+        <div class="pkg-title">环境管理和 ESG<br>可持续发展</div>
+        <div class="pkg-desc">环境保护、碳排放、ESG 披露与可持续管理</div>
+      </div>
+    </div>
+    <div class="pkg-note">可根据个人短板选择单一课包，也可系统学习全套课程</div>
+  </section>
+
+  <!-- 课程陈列：课包A 详细 13 门 -->
+  <section>
+    <div class="sec-h">课包A · 13 门精选课程</div>
+    <div class="sec-sub">每门 = 一个生活场景 + 一个 EHS 专业模块</div>
+    <div class="grid" id="grid"></div>
+  </section>
+
+  <div class="foot">
+    <div class="strong">安全五点半 · EHS英语角</div>
+    <div>自研课程 · 试听功能即将开放</div>
+  </div>
+
+</div>
+
+<script>
+var COURSES = [
+  {code:"A01", life:"自我介绍与入职", ehs:"职业健康安全管理体系"},
+  {code:"A02", life:"睡眠与作息",     ehs:"远景、使命、方针及管理层 EHS 职责"},
+  {code:"A03", life:"餐厅点餐",       ehs:"EHS 经理的工作描述"},
+  {code:"A04", life:"上菜与用餐",     ehs:"EHS 经理的职责、期望与经历技能"},
+  {code:"A05", life:"挑选商品",       ehs:"EHS 经理的简历"},
+  {code:"A06", life:"进入校园",       ehs:"员工 EHS 职责"},
+  {code:"A07", life:"学校课程",       ehs:"如何写工作邮件"},
+  {code:"A08", life:"约会",           ehs:"ISO 45001 5.1 领导力和承诺"},
+  {code:"A09", life:"表达高兴与难过", ehs:"员工的协商和参与"},
+  {code:"A10", life:"喜好表达",       ehs:"用 PPT 做工作演说"},
+  {code:"A11", life:"感冒就医与描述症状", ehs:"危害识别及风险与机遇评估"},
+  {code:"A12", life:"旅游计划",       ehs:"目标指标及实现计划的能力"},
+  {code:"A13", life:"参观游览",       ehs:"运营计划和控制"}
+];
+var grid = document.getElementById("grid");
+COURSES.forEach(function(c){
+  var el = document.createElement("div");
+  el.className = "course";
+  el.innerHTML =
+    '<div class="top"><span class="code">'+c.code+'</span><span class="life">'+c.life+'</span></div>'+
+    '<div class="ehs">EHS 模块：<b>'+c.ehs+'</b></div>'+
+    '<span class="trial">试听 · 敬请期待</span>';
+  grid.appendChild(el);
+});
+</script>
+</body>
+</html>
